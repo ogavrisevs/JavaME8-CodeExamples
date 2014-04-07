@@ -1,0 +1,12 @@
+MIDlet-1: ThreadMidlet,,com.bla.laa.thread.ThreadMidlet
+MIDlet-2: RunnableMidlet,,com.bla.laa.runnable.RunnableMidlet
+MIDlet-3: HelloJavaMeMidlet,,com.bla.laa.hellojavame.HelloJavaMeMidlet
+MIDlet-4: TimerTaskMidlet,,com.bla.laa.timertask.TimerTaskMidlet
+MIDlet-5: HomeWorkMidlet,,com.bla.laa.homework.HomeWorkMidlet
+MIDlet-Jar-Size: 19462
+MIDlet-Jar-URL: Lesson1.jar
+MIDlet-Name: JavaMEApplication1
+MIDlet-Vendor: oskarsg
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.8
+MicroEdition-Profile: MEEP-8.0

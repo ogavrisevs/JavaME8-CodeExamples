@@ -3,7 +3,7 @@
     <type>org.netbeans.modules.j2me.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2me-embedded-project/1">
-            <name>HelloJavaME</name>
+            <name>Lesson1</name>
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>

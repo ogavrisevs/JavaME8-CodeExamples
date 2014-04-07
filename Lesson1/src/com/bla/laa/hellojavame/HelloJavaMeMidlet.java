@@ -1,10 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-package javameapplication1;
+package com.bla.laa.hellojavame;
 
 import javax.microedition.midlet.MIDlet;
 
@@ -12,7 +7,7 @@ import javax.microedition.midlet.MIDlet;
  *
  * @author oskarsg
  */
-public class JavaMEApplication1 extends MIDlet {
+public class HelloJavaMeMidlet extends MIDlet {
     
     @Override
     public void startApp() {
