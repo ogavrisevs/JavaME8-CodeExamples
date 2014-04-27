@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="solution.lesson4.visualclient.VisualClientController">
+  <tabs>
+    <Tab text="Temperatures">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<VBox alignment="CENTER" prefHeight="382.0" prefWidth="535.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children><AreaChart fx:id="temperatureChart" layoutX="18.0" layoutY="14.0" prefHeight="382.0" prefWidth="535.0" title="Temperature Monitoring (in Degrees Celsius)" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <xAxis>
+    <CategoryAxis side="BOTTOM" />
+  </xAxis>
+  <yAxis>
+    <NumberAxis side="LEFT" />
+  </yAxis>
+</AreaChart>
+<HBox alignment="CENTER" spacing="7.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children><Button fx:id="connectButton" mnemonicParsing="false" onAction="#handleConnectButtonClicked" text="Connect" /><Button fx:id="readDataButton" mnemonicParsing="false" onAction="#handleReadDataButtonClicked" text="Read Data">
+<VBox.margin>
+<Insets bottom="7.0" top="7.0" />
+</VBox.margin></Button><Button fx:id="disconnectButton" mnemonicParsing="false" onAction="#handleDisconnectButtonClicked" text="Disconnect" />
+</children>
+<VBox.margin>
+<Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+</VBox.margin>
+</HBox>
+<HBox spacing="7.0">
+<children><Label text="Status:" /><Label fx:id="statusLabel" text="Ready to connect" />
+</children>
+<VBox.margin>
+<Insets left="10.0" />
+</VBox.margin>
+</HBox>
+</children>
+</VBox>
+</children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Positions">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children><TableView fx:id="positionTable" prefHeight="382.0" prefWidth="535.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns:fx="http://javafx.com/fxml">
+  <columns>
+    <TableColumn fx:id="dateTimeCol" minWidth="250.0" prefWidth="300.0" text="Date/Time" />
+    <TableColumn fx:id="latitudeCol" minWidth="120.0" prefWidth="150.0" text="Latitude" /><TableColumn fx:id="longitudeCol" minWidth="120.0" prefWidth="150.0" text="Longitude" /><TableColumn fx:id="altitudeCol" minWidth="120.0" prefWidth="150.0" text="Altitude" />
+  </columns>
+</TableView>
+</children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
